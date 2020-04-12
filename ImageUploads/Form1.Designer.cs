@@ -113,7 +113,7 @@
             this.image_UploadsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.image_UploadsBindingNavigator.Name = "image_UploadsBindingNavigator";
             this.image_UploadsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.image_UploadsBindingNavigator.Size = new System.Drawing.Size(345, 25);
+            this.image_UploadsBindingNavigator.Size = new System.Drawing.Size(440, 25);
             this.image_UploadsBindingNavigator.TabIndex = 0;
             this.image_UploadsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -152,14 +152,14 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -167,7 +167,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -176,13 +176,13 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -199,7 +199,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // image_UploadsBindingNavigatorSaveItem
@@ -207,13 +207,14 @@
             this.image_UploadsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.image_UploadsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("image_UploadsBindingNavigatorSaveItem.Image")));
             this.image_UploadsBindingNavigatorSaveItem.Name = "image_UploadsBindingNavigatorSaveItem";
-            this.image_UploadsBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.image_UploadsBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.image_UploadsBindingNavigatorSaveItem.Text = "Save Data";
             this.image_UploadsBindingNavigatorSaveItem.Click += new System.EventHandler(this.image_UploadsBindingNavigatorSaveItem_Click);
             // 
             // idLabel
             // 
             idLabel.AutoSize = true;
+            idLabel.ForeColor = System.Drawing.Color.White;
             idLabel.Location = new System.Drawing.Point(61, 34);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(18, 13);
@@ -223,7 +224,9 @@
             // idLabel1
             // 
             this.idLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.image_UploadsBindingSource, "id", true));
-            this.idLabel1.Location = new System.Drawing.Point(115, 34);
+            this.idLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idLabel1.ForeColor = System.Drawing.Color.White;
+            this.idLabel1.Location = new System.Drawing.Point(131, 34);
             this.idLabel1.Name = "idLabel1";
             this.idLabel1.Size = new System.Drawing.Size(100, 23);
             this.idLabel1.TabIndex = 2;
@@ -232,6 +235,7 @@
             // nameLabel
             // 
             nameLabel.AutoSize = true;
+            nameLabel.ForeColor = System.Drawing.Color.White;
             nameLabel.Location = new System.Drawing.Point(61, 72);
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new System.Drawing.Size(38, 13);
@@ -243,12 +247,13 @@
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.image_UploadsBindingSource, "Name", true));
             this.nameTextBox.Location = new System.Drawing.Point(115, 69);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.nameTextBox.Size = new System.Drawing.Size(140, 20);
             this.nameTextBox.TabIndex = 4;
             // 
             // imgpathLabel
             // 
             imgpathLabel.AutoSize = true;
+            imgpathLabel.ForeColor = System.Drawing.Color.White;
             imgpathLabel.Location = new System.Drawing.Point(61, 104);
             imgpathLabel.Name = "imgpathLabel";
             imgpathLabel.Size = new System.Drawing.Size(48, 13);
@@ -258,7 +263,9 @@
             // imgpathLabel1
             // 
             this.imgpathLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.image_UploadsBindingSource, "Imgpath", true));
-            this.imgpathLabel1.Location = new System.Drawing.Point(115, 104);
+            this.imgpathLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.imgpathLabel1.ForeColor = System.Drawing.Color.White;
+            this.imgpathLabel1.Location = new System.Drawing.Point(131, 101);
             this.imgpathLabel1.Name = "imgpathLabel1";
             this.imgpathLabel1.Size = new System.Drawing.Size(100, 23);
             this.imgpathLabel1.TabIndex = 6;
@@ -267,6 +274,7 @@
             // imgLabel
             // 
             imgLabel.AutoSize = true;
+            imgLabel.ForeColor = System.Drawing.Color.White;
             imgLabel.Location = new System.Drawing.Point(61, 133);
             imgLabel.Name = "imgLabel";
             imgLabel.Size = new System.Drawing.Size(27, 13);
@@ -275,30 +283,34 @@
             // 
             // imgPictureBox
             // 
+            this.imgPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.imgPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.image_UploadsBindingSource, "Img", true));
             this.imgPictureBox.Location = new System.Drawing.Point(115, 133);
             this.imgPictureBox.Name = "imgPictureBox";
-            this.imgPictureBox.Size = new System.Drawing.Size(150, 150);
+            this.imgPictureBox.Size = new System.Drawing.Size(241, 166);
             this.imgPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgPictureBox.TabIndex = 8;
             this.imgPictureBox.TabStop = false;
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DarkRed;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(118, 305);
+            this.button1.Location = new System.Drawing.Point(156, 305);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(147, 41);
             this.button1.TabIndex = 9;
             this.button1.Text = "Upload Image";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(345, 375);
+            this.BackColor = System.Drawing.Color.Maroon;
+            this.ClientSize = new System.Drawing.Size(440, 375);
             this.Controls.Add(this.button1);
             this.Controls.Add(idLabel);
             this.Controls.Add(this.idLabel1);
@@ -309,6 +321,7 @@
             this.Controls.Add(imgLabel);
             this.Controls.Add(this.imgPictureBox);
             this.Controls.Add(this.image_UploadsBindingNavigator);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
